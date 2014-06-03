@@ -6,6 +6,9 @@
 int main(int argc, char *argv[])
 {
     std::cout << "create-git-proj\n";
+    std::cout << "using:\n";
+    std::cout << "./create-git-proj project.git\n";
+    
     std::string projName = argv[1];
     std::string path = "/Library/WebServer/Documents/repo";
     std::string tmp;
