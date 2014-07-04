@@ -9,6 +9,11 @@ int main(int argc, char *argv[])
     std::cout << "using:\n";
     std::cout << "./create-git-proj project.git\n";
     
+    if (argc != 2) {
+        std::cout << "Please use correct arguments\n";
+        return 0;
+    }
+    
     std::string projName = argv[1];
     std::string path = "/Library/WebServer/Documents/repo";
     std::string tmp;
